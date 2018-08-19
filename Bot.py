@@ -12,11 +12,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('!hello'):
-        msg = ''' X | O | X
----+---+---
- O | X | O
----+---+---
- O | x | O'''.format(message)
+        msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
 
 
