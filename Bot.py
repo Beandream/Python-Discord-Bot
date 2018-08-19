@@ -19,6 +19,7 @@ async def on_message(message):
  O | x | O'''.format(message)
         await client.send_message(message.channel, msg)
 
+
 @client.event
 async def on_ready():
     print('Logged in as')
